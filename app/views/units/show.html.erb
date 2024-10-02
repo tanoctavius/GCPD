@@ -1,0 +1,45 @@
+<div class="card" id="officers">
+  <div class="card-content">
+    <span class="card-title"><%= @unit.name %></span>
+    <% if @officers.empty? %>
+      <p>There are no active officers currently in this unit</p>
+    <% else %>
+     <h4>Active Officers in <%=@unit.name%> Unit</h4>
+      <table class="striped highlight">
+        <thead>
+          <th>Name</th>
+          <th>Rank</th>
+          <th>Active Assignments</th>
+        </thead>
+        <% for o in @officers.alphabetical %>
+          <tr>
+            <td><%= o.name %></td>
+            <td><%= o.rank %></td>
+            <td><%= o.assignments.current.count %></td>
+          </tr>
+          <br />
+        <% end %>
+      </table>
+      <br />
+      <%= will_paginate @officers, previous_label: "Previous&nbsp;", next_label: "&nbsp;Next"%>
+      <p>&nbsp;</p>
+    <% end %>
+  </div>
+</div>
+
+
+<div class="card" id="stats">
+  <div class="card-content">
+    <span class="card-title">Statistics for <%= @unit.name %> Unit</span>
+    <b>Number of Active Officers:&nbsp;&nbsp;<b>
+      <%= @unit.number_of_active_officers %><br /><br />
+    <b>Number of Open Cases:&nbsp;&nbsp;</b>
+      <%= @unit.number_of_unique_open_investigations %><br /><br />
+    <b>Number of Closed Cases:&nbsp;&nbsp;</b>
+      <%=  @unit.number_of_unique_closed_investigations %><br /><br />
+    <b>Cases Involving Batman:&nbsp;&nbsp;<b>
+      <%=  @unit.number_of_unique_investigations_involving_batman %><br /><br />
+  </div>
+</div>
+
+

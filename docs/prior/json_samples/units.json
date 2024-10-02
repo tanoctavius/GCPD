@@ -1,0 +1,77 @@
+//> curl -X GET -H "Accept: application/json" "http://localhost:3000/v1/units.json"
+
+{
+	"data": [{
+		"id": "6",
+		"type": "unit",
+		"attributes": {
+			"name": "Coroner",
+			"active": true,
+			"open_investigations": 0,
+			"current_officers": 1
+		}
+	}, {
+		"id": "5",
+		"type": "unit",
+		"attributes": {
+			"name": "Forensics",
+			"active": true,
+			"open_investigations": 0,
+			"current_officers": 3
+		}
+	}, {
+		"id": "2",
+		"type": "unit",
+		"attributes": {
+			"name": "Headquarters",
+			"active": true,
+			"open_investigations": 0,
+			"current_officers": 2
+		}
+	}, {
+		"id": "3",
+		"type": "unit",
+		"attributes": {
+			"name": "Homicide",
+			"active": true,
+			"open_investigations": 10,
+			"current_officers": 6
+		}
+	}, {
+		"id": "1",
+		"type": "unit",
+		"attributes": {
+			"name": "Major Crimes",
+			"active": true,
+			"open_investigations": 15,
+			"current_officers": 13
+		}
+	}, {
+		"id": "7",
+		"type": "unit",
+		"attributes": {
+			"name": "Narcotics",
+			"active": true,
+			"open_investigations": 0,
+			"current_officers": 0
+		}
+	}, {
+		"id": "8",
+		"type": "unit",
+		"attributes": {
+			"name": "Patrol",
+			"active": true,
+			"open_investigations": 0,
+			"current_officers": 51
+		}
+	}, {
+		"id": "10",
+		"type": "unit",
+		"attributes": {
+			"name": "Quick Response Team",
+			"active": true,
+			"open_investigations": 0,
+			"current_officers": 13
+		}
+	}]
+}

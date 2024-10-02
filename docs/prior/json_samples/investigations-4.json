@@ -1,0 +1,86 @@
+//> curl -X GET -H "Accept: application/json" "http://localhost:3000/v1/investigations/4.json"
+
+{
+	"data": {
+		"id": "4",
+		"type": "investigation",
+		"attributes": {
+			"title": "The Holiday Murders",
+			"description": "A heinous series of murders and bombings among the Gotham underworld that align with major holidays.",
+			"crime_location": "Multiple Locations (see notes for each location)",
+			"date_opened": "2023-10-31",
+			"date_closed": null,
+			"solved": false,
+			"batman_involved": true,
+			"current_assigned_officers": [{
+				"data": {
+					"id": "1",
+					"type": "officer",
+					"attributes": {
+						"name": "Blake, John",
+						"rank": "Detective Sergeant",
+						"unit": "Major Crimes"
+					}
+				}
+			}, {
+				"data": {
+					"id": "5",
+					"type": "officer",
+					"attributes": {
+						"name": "Azeveda, Josh",
+						"rank": "Detective",
+						"unit": "Major Crimes"
+					}
+				}
+			}],
+			"past_assigned_officers": [{
+				"data": {
+					"id": "13",
+					"type": "officer",
+					"attributes": {
+						"name": "Bullock, Harvey",
+						"rank": "Detective",
+						"unit": "Major Crimes"
+					}
+				}
+			}],
+			"suspects": [{
+				"data": {
+					"id": "4",
+					"type": "suspect",
+					"attributes": {
+						"name": "Falcone, Carmine",
+						"status": "Dropped Suspect",
+						"enhanced_powers": false,
+						"added_on": "2023-10-31",
+						"dropped_on": "2023-11-24"
+					}
+				}
+			}, {
+				"data": {
+					"id": "5",
+					"type": "suspect",
+					"attributes": {
+						"name": "Maroni, Salvatore",
+						"status": "Current Suspect",
+						"enhanced_powers": false,
+						"added_on": "2023-11-24",
+						"dropped_on": null
+					}
+				}
+			}, {
+				"data": {
+					"id": "6",
+					"type": "suspect",
+					"attributes": {
+						"name": "Dent, Harvey",
+						"status": "Current Suspect",
+						"enhanced_powers": false,
+						"added_on": "2023-12-25",
+						"dropped_on": null
+					}
+				}
+			}]
+		}
+	}
+}

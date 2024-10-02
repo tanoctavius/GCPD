@@ -1,0 +1,77 @@
+//> curl -X GET -H "Accept: application/json" "http://localhost:3000/v1/criminals/enhanced.json"
+
+{
+	"data": [{
+		"id": "14",
+		"type": "criminal",
+		"attributes": {
+			"name": "Crane, Jonathan",
+			"aka": "Scarecrow",
+			"convicted_felon": "Yes",
+			"notes": "Professor Jonathan Crane was an outcast in childhood due to the constant bullying, until he grew up to face his fears as a psychologist and biochemist in the specialization of fear. Kicked out of a university for his unorthodox teaching methods, he now dresses symbolically as a scarecrow, and employs a toxin that causes its victims to hallucinate the presence of what they most fear."
+		}
+	}, {
+		"id": "3",
+		"type": "criminal",
+		"attributes": {
+			"name": "Dorrance, Edmund",
+			"aka": "Bane",
+			"convicted_felon": "Yes",
+			"notes": "The international masked criminal known as Bane has immense strength that comes from a super-steroid called Venom. Bane's raw power coupled with his genius level intellect makes him a considerable threat to Batman, having once succeeded in breaking Batman's back."
+		}
+	}, {
+		"id": "8",
+		"type": "criminal",
+		"attributes": {
+			"name": "Hagan, Matt",
+			"aka": "Clayface",
+			"convicted_felon": "Yes",
+			"notes": "Treasure-hunter Matt Hagen was transformed into the monstrous Clayface by a pool of radioactive protoplasm. He now possesses super-strength and can change his claylike body into any form."
+		}
+	}, {
+		"id": "11",
+		"type": "criminal",
+		"attributes": {
+			"name": "Isley, Pamela",
+			"aka": "Poison Ivy",
+			"convicted_felon": "Yes",
+			"notes": "Pamela Lillian Isley, a former student of advanced botanical biochemistry, employs plants of all varieties and their derivatives in her crimes. She has the ability to control all plant life and can create new henchmen with her mutated seeds. She is immune to all plant-based poisons."
+		}
+	}, {
+		"id": "5",
+		"type": "criminal",
+		"attributes": {
+			"name": "Jones, Waylon",
+			"aka": "Killer Croc",
+			"convicted_felon": "Yes",
+			"notes": "Waylon Jones has a medical condition that warped his body into a massive crocodile-like form. As Croc descended into madness, he sharpened his teeth to razor points and began murdering innocent victims. He possesses super-strength and is immune to toxins."
+		}
+	}, {
+		"id": "16",
+		"type": "criminal",
+		"attributes": {
+			"name": "Langstrom, Kirk",
+			"aka": "Man-Bat",
+			"convicted_felon": "No",
+			"notes": "Dr. Kirk Langstrom invented a serum to give him echolocation to cure his growing deafness. The serum had an unforeseen side-effect, transforming him into the monstrous Man-Bat."
+		}
+	}, {
+		"id": "7",
+		"type": "criminal",
+		"attributes": {
+			"name": "Wilson, Slade",
+			"aka": "Deathstroke",
+			"convicted_felon": "Yes",
+			"notes": "Chosen for a secret experiment, the Army imbued him with enhanced physical powers in an attempt to create metahuman super soldiers for the U.S. military. Deathstroke became a mercenary soon after the experiment when he defied orders. Slade Wilson's physical and mental attributes have been enhanced as a result of the experimental serum he was given; he possesses heightened strength, agility, durability, and reflexes, and has the ability to utilize up to 90 percent of his brain capacity. Deathstroke also possesses a regenerative healing factor that enables him to recover from physical injury much more rapidly than a normal human; it does, however, have its limits, as it could not heal his missing eye nor can it regenerate entire limbs. This enhanced endurance enables him to survive otherwise fatal injuries, though recovering from such injuries renders him temporarily insane and ferociously animalistic. In addition to being a tactical genius with years of military experience, Deathstroke is an expert in many forms of unarmed combat and martial arts as well, serving as a master of Bōjutsu, Boxing, Jojutsu, Judo, Jujitsu, Karate, and Ninjutsu."
+		}
+	}, {
+		"id": "13",
+		"type": "criminal",
+		"attributes": {
+			"name": "al Ghul, Ra's",
+			"aka": null,
+			"convicted_felon": "No",
+			"notes": "Ra's al Ghul is a centuries-old international eco-terrorist who believes that his actions help bring balance to the world. Ra's al Ghul is the founder of the League of Assassins. Ra's' greatest tools are his Lazarus Pits, which heal any injury including recent death and restore the user back to the prime of life, but cause temporary insanity. His constant exposure to the pits have granted him slightly enhanced endurance, strength, and healing but also comes with the price of a gradual onset of insanity if overused. Due to his expanded life span, Ra's has accumulated a vast knowledge of hand-to-hand combat, chemistry, detective artistry, physics, and martial arts. He has also gained many international contacts and a vast fortune over the course of centuries."
+		}
+	}]
+}

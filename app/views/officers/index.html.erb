@@ -1,0 +1,20 @@
+<h1>Active Officers in GCPD</h1>
+<table class="striped highlight">
+  <thead>
+    <th>Name</th>
+    <th>Rank</th>
+    <th class="align_center">Options</th>
+  </thead>
+    <% for officer in @active_officers %>
+    <tr class="<%= cycle('dg_list_line_odd', 'dg_list_line_even') %>">
+      <td><%= link_to officer.name, officer_path(officer) %></td>
+      <td><%= officer.rank %></td>
+    </tr>   
+  <% end %>
+</table>
+  <br />
+  <%= will_paginate @active_officers, previous_label: "Previous&nbsp;", next_label: "&nbsp;Next" %>
+
+<p><strong>
+<%= link_to "New Officer", new_officer_path, class: 'waves-effect waves-light btn' %> 
+</strong></p>

@@ -1,0 +1,41 @@
+//> curl -X GET -H "Accept: application/json" "http://localhost:3000/v1/officers/1.json"
+
+{
+	"data": {
+		"id": "1",
+		"type": "officer",
+		"attributes": {
+			"name": "Blake, John",
+			"rank": "Detective Sergeant",
+			"unit": "Major Crimes",
+			"current_investigations": [{
+				"data": {
+					"id": "1",
+					"type": "investigation",
+					"attributes": {
+						"title": "Lacey Towers Murder",
+						"date_opened": "2023-04-23",
+						"crimes": [
+							"Murder"
+						],
+						"batman_involved": "No"
+					}
+				}
+			}, {
+				"data": {
+					"id": "4",
+					"type": "investigation",
+					"attributes": {
+						"title": "The Holiday Murders",
+						"date_opened": "2023-10-31",
+						"crimes": [
+							"Murder",
+							"Arson"
+						],
+						"batman_involved": "Yes"
+					}
+				}
+			}]
+		}
+	}
+}

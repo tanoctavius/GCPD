@@ -1,0 +1,8 @@
+.card.blue.lighten-5 {
+    transition: background-color 0.3s ease;
+  }
+  
+.card.blue.lighten-5:hover {
+background-color: #4169E1; 
+}
+
